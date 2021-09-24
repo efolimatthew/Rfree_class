@@ -1,0 +1,45 @@
+---
+title: "Team_Alpha_Task 2"
+author: "Team Alpha"
+date: "23/09/2021"
+output: html_document
+---
+
+## Introduction
+What is the Benifts data set about?
+Define the concepts of Unemployment Insurance payment (benefits), - https://www.dol.gov/general/topic/unemployment-insurance; https://oui.doleta.gov/unemploy/uifactsheet.asp
+state unemployment rate, - 
+state maximum benefit level, - https://www.healthinsurance.org/glossary/maximum-dollar-limit/
+Job Lost, - 
+blue collar workers, - https://www.investopedia.com/terms/b/bluecollar.asp
+smsa,
+job displacement, - https://www.mightyrecruiter.com/recruiter-guide/hiring-glossary-a-to-z/job-displacement/
+replacement rate - https://www.investopedia.com/terms/r/replacement-rate.asp
+slack work - https://www.insee.fr/en/metadonnees/definition/c1974
+
+TakeUp rate - https://financial-dictionary.thefreedictionary.com/Take+Up+Rate
+
+##Reference Materials
+ - https://oui.doleta.gov/unemploy/uifactsheet.asp
+ 
+Very good read -  https://www.epi.org/publication/section-5-benefit-levels-increase-ui-benefits-to-levels-working-families-can-survive-on/
+
+Refernce Paper - https://sci-hub.se/https://doi.org/10.1080/07350015.1995.10524593
+## what makes people eligible for the Unemployment insurance benefits?
+
+
+## Does any of the above terms relate??
+Draw references from some papers to justify the analysis
+Paper 1 - https://www.jstor.org/stable/1392373
+Paper 2 - 
+
+
+## Data cleaning
+change the yrdispl back to years and make a factor
+
+
+
+```{r}
+
+```
+
