@@ -7,10 +7,10 @@ Statistical Modelling (Week 5)
 
 
 ## Members of Team Alpha
-Oladimeji Williams
-Isaac Arimoro
-Joshua Olayori
-Grace Chinwe Okafor
-Aliu Suleeman
-Efoli Matthew
+* Oladimeji Williams
+* Isaac Arimoro
+* Joshua Olayori
+* Grace Chinwe Okafor
+* Aliu Suleeman
+* Efoli Matthew
 
