@@ -450,15 +450,14 @@ stat_code41 %>% ggplot(mapping = aes(x = married, fill = ui)) +
 
 stat_code41 %>% ggplot(mapping = aes(x = yrdispl, fill = ui)) + 
   geom_bar(stat = "count") + ggtitle("UI applicants' status based on year of displacement")
+##Having done an EDA to estimates the possible reason for the grant of UI benefits' application 
+##A statistical modeling will be carried out to determine the effectiveness of the UI application system
 
-## statistical modeling will be carried out to determine the effectiveness of the UI application system
-
-# Select the numeric data and create a correlation plot
+# Select the numeric data
 num_data <- data2 %>% select(stateur, statemb, state, age, tenure, rr)
 str(num_data)
 data2 %>% summary
 num_data %>% summary
-
 
 ##Reference
 #https://www.jstor.org/stable/1392373

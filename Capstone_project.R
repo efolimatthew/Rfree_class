@@ -83,5 +83,92 @@ quantities = c(20, 30)
 price.list = c(500, 600)
 
 AddItem(item = new_items, quantity = quantities, price = price.list)
-
 ## what if the item is already in the list?
+
+
+
+
+##3.	An inbuilt function to compute goods purchased per 
+#customer and displays a receipt for printing. 
+
+order_table <- data.frame(
+  time = Sys.time(),
+  item_bought = item,
+  quantity_bought = quantity,
+  price_sold = price, #price from shop list
+  sub_total = (quantity*price)
+)
+
+# 3a.having an if condition of VAT of 20% when customers buy less than 5 items.
+# < 5 items
+if (item < 5) {
+  print(paste("Items bought", items, "Quantity bought", quantity, "Total Price + 20% VAT", price))
+} else {
+  if (items > 10) {
+    print(paste("Items bought", items, "Quantity bought", quantity, "Total Price + 20% VAT", price))
+  } 
+}
+##a.	The function must be able to add 20% VAT for customers 
+#buying less than 5 items. 
+
+##b.	30% VAT for customers buying more than 10 items. 
+##c.	N800 bonus goods for customers purchasing more than 
+#10 items with the least amount being N100.
+
+#Solution
+#the code should be able to take the item and quantity needed
+#then bring back the price
+#but in the return of the price it should have an if statement
+#for different calculation of items more than 5, 10
+
+##4.	An inbuilt function that updates stock after an item 
+#has been purchased. 
+update_stock <- function() {
+  
+}
+
+
+##5.	An inbuilt function that takes record of total gain per day. 
+
+
+##b.	Write a test program, that communicates with the buyer, 
+#taking note of the following: 
+##i.	Displays the available items. 
+ordered_item <- NULL #customers' order 
+# Get customers' order from graphics output
+available_order <- NULL #available items in the shop from customers' order.
+#available_order is set once the item has been set to be available in the shop.
+
+## Select your order at the shop
+ordered_item <- select.list(choice = c(shop$Item),
+                            preselect = NULL,
+                            multiple = T,
+                            title = 'Select your item of choice',
+                            graphics = T)
+
+for (item in ordered_item) {
+  if (item %in% ordered_item) {
+    available_order <- append(available_order, item)
+  } else {
+    print(paste(item, "is not available at Rosemary's shop"))
+  }
+}
+#-----------------------------------------------------
+# call the available_order
+available_order
+
+
+result <- available_order %in% shop3$Item
+result
+which(shop3$Item == available_order)
+
+assigned_row <- which(rownames(shop4) == item)
+shop4[assigned_row, 2] <- price
+return(shop4[assigned_row, ])
+##ii.	Their corresponding price. 
+##iii.	Receives items customers want to buy, and their 
+#corresponding quantities. 
+##iv.	Computes their total payment. 
+##v. Finally display to the customers, a receipt (with 
+#the item purchased, quantity, corresponding prices and 
+#total price). Also display discounts (if any)
