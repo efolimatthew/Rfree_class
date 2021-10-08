@@ -41,6 +41,12 @@ summary(data2$statemb)
 sapply (data2, levels)
 
 # Visualization
+
+#-----------------------
+#Consider faceting the 54 states.
+
+
+
 data2 %>% ggplot(mapping = aes(x = joblost, fill = ui)) + 
   geom_bar(stat = "count") + ggtitle("UI applicants' status based on 'joblost' category")
 
