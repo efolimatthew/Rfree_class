@@ -45,7 +45,7 @@ change_price <- function(item, price){
     cat(paste(item, "is not available at Rosemary's shop.\nWant to add?\nUse the 'AddItem' function"))
   }
 }
-
+#This does change ths shop2 data frame in the function environment but not in the global/parent environment. 
 
 change_price(item = "Sugar", price = 200)
 shop2
